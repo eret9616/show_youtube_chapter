@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "click chapter-btn",
+    "version": "1.0",
+    "browser_action":{  },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "permissions": [
+      "tabs",
+      "storage",
+      "https://www.youtube.com/*"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://www.youtube.com/*"],
+          "all_frames": true,
+          "js": ["contentScript.js"]
+        }
+      ]
+  }
