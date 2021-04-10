@@ -10,5 +10,4 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       btn?.click()  
      },3000)
   }
-  return true
 });
