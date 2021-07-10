@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "click chapter-btn",
+    "name": "show youtube chapter",
     "version": "1.0",
     "browser_action":{  },
     "background": {
