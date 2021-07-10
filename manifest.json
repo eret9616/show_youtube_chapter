@@ -2,13 +2,11 @@
     "manifest_version": 2,
     "name": "show youtube chapter",
     "version": "1.0",
-    "browser_action":{  },
     "background": {
       "scripts": ["background.js"]
     },
     "permissions": [
-      "tabs",
-      "https://www.youtube.com/*"
+      "tabs"
     ],
     "content_scripts": [
         {
