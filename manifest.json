@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Show Youtube Chapter",
-    "version": "0.2.1",
+    "version": "1.2.1",
     "background": {
       "scripts": ["background.js"]
     },
