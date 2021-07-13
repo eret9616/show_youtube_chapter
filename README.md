@@ -8,4 +8,4 @@ This chrome extension will open youtube chapter automatically everytime you open
 
 [Download Here](https://chrome.google.com/webstore/detail/show-youtube-chapter/jppdhhbhfplniidecbbiianinakbgeeb?hl=en&authuser=0)  
 
-❤ leave a like if you find this helps you
+❤ leave a like if you find this helps you.
