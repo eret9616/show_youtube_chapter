@@ -2,6 +2,7 @@
     "manifest_version": 2,
     "name": "Show Youtube Chapter",
     "version": "1.2.1",
+    "description": "This chrome extension will open youtube chapter automatically everytime you open a new video.",
     "background": {
       "scripts": ["background.js"]
     },
