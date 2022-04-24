@@ -1,7 +1,15 @@
 function afterWindowLoaded(){
-  timer = setInterval(()=>{
+  let count = 0
+  let timer = setInterval(()=>{
     var btn = document.querySelector('.ytp-chapter-title-prefix')  
-    if(!btn){ return }
+    if(count>=10){
+      clearInterval(timer)
+      return
+    }
+    if(!btn){ 
+      count++
+      return 
+    }
     btn.click()
     clearInterval(timer)
    },3000)  // extensions (ad-blockers...) would affect LCP
