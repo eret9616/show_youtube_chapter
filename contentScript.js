@@ -12,13 +12,14 @@ function afterWindowLoaded(){
     }
     btn.click()
     clearInterval(timer)
-   },3000)
+   },1500)
 }
 
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
   if(document.readyState !== 'complete') {
       window.addEventListener('load',afterWindowLoaded);
   } else {
       afterWindowLoaded();
   }
+  sendResponse()
 });
