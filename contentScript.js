@@ -12,7 +12,7 @@ function afterWindowLoaded(){
     }
     btn.click()
     clearInterval(timer)
-   },3000)  // extensions (ad-blockers...) would affect LCP
+   },3000)
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
