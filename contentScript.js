@@ -1,8 +1,10 @@
 function afterWindowLoaded(){
-  setTimeout(()=>{
-    var btn = document.querySelector('.ytp-chapter-title-prefix')    
-    btn?.click()  
-   },3000)  // some extension (ad-blockers...) would affect LCP
+  timer = setInterval(()=>{
+    var btn = document.querySelector('.ytp-chapter-title-prefix')  
+    if(!btn){ return }
+    btn.click()
+    clearInterval(timer)
+   },3000)  // extensions (ad-blockers...) would affect LCP
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
